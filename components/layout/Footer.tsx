@@ -35,7 +35,7 @@ export function Footer({ company, nav }: { company: Company; nav: { company: Nav
         </div>
 
         <div className="mt-20 overflow-hidden border-t border-white/10 pt-10">
-          <p aria-hidden="true" className="select-none whitespace-nowrap font-display text-[17vw] font-extrabold uppercase leading-[0.8] tracking-[-0.05em] text-white/[0.04]">
+          <p aria-hidden="true" className="select-none whitespace-nowrap font-display text-[9.5vw] tex font-extrabold uppercase leading-[0.8] tracking-[-0.05em] text-white/[0.04]">
             {company.shortName}
           </p>
         </div>
