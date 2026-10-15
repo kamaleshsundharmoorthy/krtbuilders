@@ -12,7 +12,13 @@ import { CompanySettings, HomePage, Customizer } from "./cms/globals";
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
+import mongoose from 'mongoose'
 
+if (process.env.DATABASE_URI) {
+  mongoose.connect(process.env.DATABASE_URI)
+    .then((conn) => console.log(`✅ MongoDB Connected Successfully to: ${conn.connection.host}`))
+    .catch((err) => console.error(`❌ MongoDB Connection Failed:`, err))
+}
 export default buildConfig({
   serverURL: process.env.NEXT_PUBLIC_SERVER_URL || "",
   admin: {

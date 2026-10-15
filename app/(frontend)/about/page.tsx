@@ -21,6 +21,7 @@ export default async function AboutPage() {
     <>
       <PageHero eyebrow="About us" title={["Homes,", "not templates."]} lead={company.description} image={images.about} />
       <AboutIntro {...about} stats={company.stats} showLink={false} />
+      <WhyChooseUs reasons={reasons} />
       <section className="bg-surface py-20 md:py-28">
         <div className="container-x">
           <Reveal><p className="eyebrow text-muted">How we work</p></Reveal>
@@ -37,7 +38,6 @@ export default async function AboutPage() {
           </Reveal>
         </div>
       </section>
-      <WhyChooseUs reasons={reasons} />
       <QualitySection {...quality} />
       <CTASection image={images.cta} />
     </>

@@ -5,7 +5,7 @@ import { LineIcon } from "@/components/ui/Icons";
 
 export function WhyChooseUs({ reasons }: { reasons: Reason[] }) {
   return (
-    <section className="section bg-background" aria-labelledby="why-title">
+    <section className=" bg-background" aria-labelledby="why-title">
       <div className="container-x">
         <SectionHeading id="why-title" eyebrow="Why choose us" title={["Why people", "build with us."]} />
         <Stagger className="mt-16 grid border-l border-t border-border sm:grid-cols-2 lg:grid-cols-5 md:mt-20" gap={0.05}>

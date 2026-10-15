@@ -29,13 +29,17 @@
     "payload": "^3.90.2",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
-    "sharp": "^0.35.5"
+    "sharp": "^0.35.5",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-react": "^5.33.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^26.6.3",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-react": "^5.18.0",
     "cross-env": "^10.1.0",
     "postcss": "^8.5.28",
     "sass": "^1.105.1",
