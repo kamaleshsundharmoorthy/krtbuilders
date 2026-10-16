@@ -81,7 +81,7 @@ export default buildConfig({
       token: process.env.BLOB_READ_WRITE_TOKEN,
       // Uploads go straight from the browser to Blob storage, avoiding
       // Vercel's 4.5 MB request limit for large photos.
-      clientUploads: true,
+      clientUploads: false,
     }),
   ],
   
