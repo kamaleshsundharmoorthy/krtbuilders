@@ -14,7 +14,10 @@ import { CompanySettings, HomePage, Customizer } from "./cms/globals";
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 import mongoose from 'mongoose'
-
+console.log(
+  "Blob token configured:",
+  Boolean(process.env.BLOB_READ_WRITE_TOKEN),
+);
 if (process.env.DATABASE_URI) {
   mongoose.connect(process.env.DATABASE_URI)
     .then((conn) => console.log(`✅ MongoDB Connected Successfully to: ${conn.connection.host}`))
@@ -81,4 +84,5 @@ export default buildConfig({
       clientUploads: true,
     }),
   ],
+  
 });
