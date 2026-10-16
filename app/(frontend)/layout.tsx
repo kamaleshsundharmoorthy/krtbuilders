@@ -14,6 +14,8 @@ import { JsonLd, localBusinessJsonLd } from "@/lib/seo";
 import { company } from "@/data/company";
 import { ogImage } from "@/data/images";
 
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   metadataBase: new URL(company.siteUrl),
   title: {
