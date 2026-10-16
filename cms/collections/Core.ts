@@ -49,7 +49,7 @@ export const Media: CollectionConfig = {
     focalPoint: true,
     // Very large camera files are scaled down on upload; the site then serves
     // responsive sizes automatically.
-    // resizeOptions: { width: 2800, withoutEnlargement: true },
+    resizeOptions: { width: 2800, withoutEnlargement: true },
     adminThumbnail: ({ doc }) => (doc?.url as string) ?? null,
   },
   fields: [
